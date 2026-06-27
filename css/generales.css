@@ -205,3 +205,71 @@ button:hover{
   background-color: lightgreen;
   box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
 }
+
+/* RESPONSIVO VERTICAL */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+  body {
+    background-image: url("/img/fondovertical.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  main {
+    width: 95%;
+    min-height: 50vh;
+
+    padding: 24px 18px;
+    border-radius: 18px;
+
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(6px);
+
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
+  }
+
+  section {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
+  }
+
+  p {
+    font-size: clamp(1rem, 4.5vw, 1.3rem);
+    line-height: 1.4;
+  }
+
+  button {
+    width: 100%;
+    max-width: 320px;
+    min-height: 48px;
+
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+
+  #marco {
+    gap: 0.8rem;
+    margin: 10px 0;
+  }
+
+  .logos {
+    width: clamp(38px, 12vw, 55px);
+  }
+
+  .caja-final {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
